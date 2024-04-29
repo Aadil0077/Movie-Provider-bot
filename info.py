@@ -12,21 +12,21 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22505271'))
-API_HASH = environ.get('API_HASH', 'c89a94fcfda4bc06524d0903977fc81e')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6994768927:AAGJMn6BjsJjhLP7yvTYxTL8d1kZkg8OQcE")
+SESSION = environ.get('SESSION', 'Movie_Hub')
+API_ID = int(environ.get('API_ID', '10110297'))
+API_HASH = environ.get('API_HASH', '45c5a500e21ddb2cec451b1e2670f4a5')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7703c1d3c58e36a56716e.jpg https://telegra.ph/file/74d3de58683ff6845f837.jpg https://telegra.ph/file/950a0aed988cc9d7dea9c.jpg https://telegra.ph/file/d2d2dd5a396ef56e4ee48.jpg https://telegra.ph/file/7e4bc0ed151ee13e76286.jpg https://telegra.ph/file/14eaf531bc83381a6943c.jpg https://telegra.ph/file/5e28043d27e8ef27ab3bf.jpg https://telegra.ph/file/3d18aedab92c38fbda7da.jpg')).split() #SAMPLE PIC
-NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/85d361ab4cb6511006022.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/86b7b7e2aa7e38f328902.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8169830d821.jpg'))
-CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
+PICS = (environ.get('PICS', 'https://telegra.ph/file/e136075c7c2443f86716d.jpg'
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/e136075c7c2443f86716d.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/e136075c7c2443f86716d.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/e136075c7c2443f86716d.jpg")
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/e136075c7c2443f86716d.jpg'))
+CODE = (environ.get('CODE', 'https://telegra.ph/file/e136075c7c2443f86716d.jpg'))
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'api.shareus.io'))
@@ -34,12 +34,12 @@ STREAM_API = (environ.get('STREAM_API', 'PUIAQBIFrydvLhIzAOeGV8yZppu2'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Ultroid_Official/18'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6695586027').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002027563292').split()] #Channel id for auto indexing ( make sure bot is admin )
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '851199369').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002131762945').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001725568693') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1001999281293') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
