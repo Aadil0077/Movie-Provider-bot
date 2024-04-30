@@ -30,7 +30,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/file/e136075c7c2443f86716d.jpg')
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'api.shareus.io'))
-STREAM_API = (environ.get('STREAM_API', 'PUIAQBIFrydvLhIzAOeGV8yZppu2'))
+STREAM_API = (environ.get('STREAM_API', '7SoRin98O4Z8veQDs4MOmlz6Jge2'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Ultroid_Oficial/18'))
 
 # Admins, Channels & Users
@@ -43,7 +43,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1001999281293') #Channel / Group Id
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002107919405') # support group id ( make sure bot is admin )
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002142077714') # support group id ( make sure bot is admin )
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002019824318') # request channel id ( make sure bot is admin )
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
